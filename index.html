@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <header class="header visually-hidden">
+      <h1 class="title">FAQ Accordion Card</h1>
+    </header>
+
+    <main class="content">
+      <div class="card">
+        <div class="card__header">
+          <img
+            src="./images/illustration-box-desktop.svg"
+            alt="a box with an '@' symbol on top of it"
+          />
+        </div>
+        <article class="card__body">
+          <h1 class="card__title">FAQ</h1>
+          <ul class="card__list">
+            <li class="card__list-item">
+              <details class="details">
+                <summary class="details__summary">
+                  How many team members can I invite?
+                </summary>
+                <p class="details__full">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </details>
+            </li>
+
+            <li class="card__list-item">
+              <details class="details">
+                <summary class="details__summary">
+                  What is the maximum file upload size?
+                </summary>
+                <p class="details__full">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </details>
+            </li>
+
+            <li class="card__list-item">
+              <details class="details">
+                <summary class="details__summary">
+                  How do I reset my password?
+                </summary>
+                <p class="details__full">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page.A reset link will be emailed
+                  to you.
+                </p>
+              </details>
+            </li>
+
+            <li class="card__list-item">
+              <details class="details">
+                <summary class="details__summary">
+                  Can I cancel my subscription?
+                </summary>
+                <p class="details__full">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </details>
+            </li>
+
+            <li class="card__list-item">
+              <details class="details">
+                <summary class="details__summary">
+                  Do you provide additional support?
+                </summary>
+                <p class="details__full">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </details>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer visually-hidden">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>
