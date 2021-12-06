@@ -25,6 +25,10 @@ li {
   list-style: none;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 summary {
   list-style: none;
 }
@@ -34,6 +38,7 @@ summary {
 :root {
   --clr-very-dark-desaturated-blue: hsl(238, 29%, 16%);
   --clr-soft-red: hsl(14, 88%, 65%);
+  --clr-shadow: hsl(260, 74%, 30%);
 
   --bg-soft-violet: hsl(273, 75%, 66%);
   --bg-soft-blue: hsl(240, 73%, 65%);
@@ -49,6 +54,11 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-soft-violet),
+    var(--bg-soft-blue)
+  );
 }
 
 .title {
@@ -58,8 +68,11 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1.5em;
+  margin: 150px 1.5em 5em;
+}
+
+.content > * {
+  flex: 1;
 }
 
 .footer {
@@ -72,6 +85,69 @@ body {
 
 /** Component styles **/
 
+.card {
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 0 1.5em 3em;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px -20px var(--clr-shadow);
+}
+
+.card__header {
+  text-align: center;
+  background: url(./images/bg-pattern-mobile.svg) no-repeat center 0;
+  padding-bottom: 4.125em;
+}
+
+.mobile-illustration {
+  max-width: 238px;
+  margin-top: -109px;
+}
+
+.desktop-illustration {
+  display: none;
+}
+
+.card__title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.card__list {
+  font-size: 12px;
+}
+
+.details {
+  padding: 1.667em 0;
+  border-bottom: 1px solid var(--divider-light-grayish-blue);
+}
+
+.details__summary {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.details__summary::after {
+  content: "";
+  width: 10px;
+  height: 7px;
+  background-image: url(./images/icon-arrow-down.svg);
+  position: absolute;
+  right: 0;
+  transform: rotate(0deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+.details[open] > .details__summary {
+  font-weight: 700;
+  padding-bottom: 1.5em;
+}
+
+.details[open] > .details__summary::after {
+  transform: rotate(180deg);
+}
 /** Utility classes **/
 
 .visually-hidden {
