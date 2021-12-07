@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-faq-accordion-card)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-faq-accordion-card/)
 
 ## My process
 
