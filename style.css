@@ -95,7 +95,6 @@ body {
 .card {
   font-family: "Kumbh Sans", sans-serif;
   max-width: 920px;
-  /*padding: 0 1.5em 3em; */
   background: white;
   border-radius: 20px;
   box-shadow: 0 20px 50px -20px var(--clr-shadow);
@@ -156,8 +155,8 @@ body {
 @media (min-width: 650px) {
   .card__body {
     margin-top: 4.375em;
-    margin-bottom: 5.125em;
     margin-left: 4em;
+    margin-bottom: 5.125em;
   }
 }
 
