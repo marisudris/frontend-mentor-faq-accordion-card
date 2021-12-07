@@ -35,15 +35,12 @@ Users should be able to:
 
 ## My process
 
-As always - first I came up with a markup that is both semantic, accessible, and provides
-the necessary styling hooks. This time the proper markup was also necessary for proper
-behavior - I used the `<detail>` and `<summary>` elements for the _accordion_ section - this
-way I could do without JavaScript.  
+As always - first I came up with a markup that is both semantic, accessible, and provides the necessary styling hooks. This time a correct markup was also necessary for a proper behavior - I used the `<detail>` and `<summary>` elements for the _accordion_ section - this way I could do this project without JavaScript.  
 Afterwards I did the mobile layout first with the top-down approach: styling larger sections
 first an then going smaller and more detailed. Coming up with proper styling & the best markup for
 images took a pretty long time. The accordion section wasn't as time-consuming as I thought it
-would be. As always it took some effort to decide the proper spacing. Here I didn't go as _pixel-perfect_
-as I usually go.
+would be. As always it took some effort to decide the proper spacing. Here I didn't try to go as _pixel-perfect_
+as I usually do.
 
 ### Built with
 
@@ -54,14 +51,13 @@ as I usually go.
 
 ### What I learned
 
-I learned to pay attention to the image details - particularly when an image overflows and when it gets
+I learned to pay attention to image details - particularly when an image overflows and when it gets
 clipped within its parent container's boundaries. Since background images get clipped and markup images
-can overflow (if we use `transform: translate` or negative `margins` as in my case) the solution reveals itself (well that and also convenient names for asset images - ones starting with `bg-..` are probably meant to be background images).
+can overflow (if we use `transform: translate` or negative `margins` as in my case) the solution pretty much reveals itself (that and also convenient names for asset images - ones starting with `bg-..` are probably meant to be background images).
 
 ### Continued development
 
-I'll probably do some more research on flex containers and how flex items behave when they only contain an
-images, and also recap on how intrinsic sizing relates to flex item size.
+I'll probably do some more research on flex containers and how flex items behave when they only contain an image, and also recap on how intrinsic sizing relates to flex item size.
 
 ## Author
 
