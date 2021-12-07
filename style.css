@@ -72,7 +72,7 @@ body {
   margin: 8em 1.5em;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .content {
     margin: 4em 3em;
   }
@@ -101,7 +101,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .card {
     display: flex;
   }
@@ -117,7 +117,7 @@ body {
   padding-bottom: 4.125em;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .card__header {
     background: url(./images/illustration-woman-online-desktop.svg) no-repeat
         left -80px top 70px,
@@ -135,7 +135,7 @@ body {
   display: none;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .mobile-illustration {
     display: none;
   }
@@ -152,7 +152,7 @@ body {
   margin: 0 1.5em 3em;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .card__body {
     margin-top: 4.375em;
     margin-left: 4em;
@@ -166,7 +166,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .card__title {
     text-align: initial;
   }
@@ -176,7 +176,7 @@ body {
   font-size: 12px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .card__list {
     margin-right: 5.6667em;
   }
@@ -210,7 +210,7 @@ body {
   transition: transform 0.1s ease-in-out;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .details__summary::after {
     margin-right: 1.333em;
   }
